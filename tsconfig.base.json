@@ -4,8 +4,8 @@
     // Language & Environment
     "target": "ES2022",
     "lib": ["ES2022"],
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "module": "esnext",
+    "moduleResolution": "bundler",
 
     // Type Checking
     "strict": true,
@@ -33,7 +33,6 @@
     "resolveJsonModule": true,
 
     // Paths (workspace references)
-    "baseUrl": ".",
     "paths": {
       "@omnisnip/types": ["./packages/types/src"],
       "@omnisnip/types/*": ["./packages/types/src/*"],
