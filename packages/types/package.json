@@ -1,0 +1,21 @@
+{
+  "name": "@omnisnip/types",
+  "version": "0.1.0",
+  "description": "Shared TypeScript types for OmniSnip",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "omnisnip",
+    "types",
+    "typescript"
+  ],
+  "files": [
+    "dist"
+  ]
+}

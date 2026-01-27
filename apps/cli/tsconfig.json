@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    // CLI-specific overrides
+    "outDir": "./dist",
+    "rootDir": "./src",
+
+    // CLI doesn't need DOM types
+    "types": ["node"],
+
+    // Resolve workspace packages
+    "paths": {
+      "@omnisnip/types": ["../../packages/types/src"],
+      "@omnisnip/shared": ["../../packages/shared/src"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "tests/**/*"],
+
+  // Workspace references for faster builds
+  "references": [{ "path": "../../packages/types" }, { "path": "../../packages/shared" }]
+}
