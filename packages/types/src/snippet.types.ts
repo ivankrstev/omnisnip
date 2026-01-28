@@ -3,7 +3,8 @@
  * Defines the structure and types related to code snippets.
  */
 
-import type { SnippetCategory, SnippetLanguage, SortOrder, Timestamp, UUID } from "./common.types";
+import type { SortOrder, Timestamp, UUID } from "./common.types";
+import type { SnippetCategory, SnippetLanguage } from "./constants";
 
 /**
  * Represents a code snippet with its associated metadata.

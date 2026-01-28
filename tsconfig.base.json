@@ -15,12 +15,13 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
 
-    // Emit
+    // Emit (required for project references)
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
     "removeComments": true,
     "importHelpers": true,
+    "incremental": true,
 
     // Interop Constraints
     "esModuleInterop": true,
@@ -30,17 +31,7 @@
 
     // Other
     "skipLibCheck": true,
-    "resolveJsonModule": true,
-
-    // Paths (workspace references)
-    "paths": {
-      "@omnisnip/types": ["./packages/types/src"],
-      "@omnisnip/types/*": ["./packages/types/src/*"],
-      "@omnisnip/shared": ["./packages/shared/src"],
-      "@omnisnip/shared/*": ["./packages/shared/src/*"],
-      "@omnisnip/ui": ["./packages/ui/src"],
-      "@omnisnip/ui/*": ["./packages/ui/src/*"]
-    }
+    "resolveJsonModule": true
   },
   "exclude": ["node_modules", "dist", "build", ".next", "out"]
 }

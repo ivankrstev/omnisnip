@@ -283,7 +283,7 @@ class StorageService {
 
       // Filter by tags
       if (filter.tags && filter.tags.length > 0) {
-        const hasMatchingTag = filter.tags.some((tag) => snippet.tags.includes(tag));
+        const hasMatchingTag = filter.tags.some((tag: string) => snippet.tags.includes(tag));
         if (!hasMatchingTag) return false;
       }
 

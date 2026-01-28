@@ -10,8 +10,8 @@
     "build:cli": "pnpm --filter @omnisnip/cli build",
     "test": "pnpm -r test",
     "lint": "pnpm -r lint",
-    "clean": "pnpm -r clean && rm -rf node_modules",
-    "type-check": "tsc --noEmit"
+    "clean": "pnpm -r clean && find . -name 'tsconfig*.tsbuildinfo' -delete",
+    "type-check": "pnpm -r --parallel exec tsc --build"
   },
   "author": "Ivan Krstev",
   "license": "ISC",
