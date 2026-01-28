@@ -18,6 +18,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
+    "@omnisnip/types": "workspace:*",
     "@omnisnip/shared": "workspace:*"
   },
   "packageManager": "pnpm@10.25.0"
